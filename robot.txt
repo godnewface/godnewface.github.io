@@ -1,0 +1,12 @@
+# robots.txt for godnewface.space
+
+User-agent: *
+Disallow: /assets/js/
+Disallow: /assets/css/
+Disallow: /node_modules/
+Disallow: /private/
+Disallow: /admin/
+
+Allow: /
+
+Sitemap: https://www.godnewface.space/sitemap.xml
