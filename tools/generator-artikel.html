@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompt Generator IMRaD</title>
+  <link href="assets/css/style1.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="topbar">
+    <label class="switch">
+      <input type="checkbox" id="themeToggle">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="container">
+  <div class="container">
+    <h1>Prompt Generator IMRaD</h1>
+
+    <label for="judul">Judul Penelitian:</label>
+    <input type="text" id="judul" placeholder="Contoh: Adaptasi Televisi Indonesia di Era Digital" />
+
+    <label for="metode">Metode Penelitian:</label>
+    <select id="metode" onchange="toggleMetodeInputs()">
+      <option value="">-- Pilih Metode --</option>
+      <option value="kualitatif">Kualitatif</option>
+      <option value="studi kasus">Studi Kasus</option>
+      <option value="kuantitatif">Kuantitatif</option>
+    </select>
+
+    <div id="tambahanKualitatif" class="hidden">
+      <label for="tambahan">Metode Tambahan:</label>
+      <input type="text" id="tambahan" placeholder="Contoh: wawancara dengan pelaku industri, akademisi, regulator" />
+    </div>
+
+    <div id="tambahanKuantitatif" class="hidden">
+      <label for="variabel">Variabel Penelitian:</label>
+      <input type="text" id="variabel" placeholder="Contoh: minat menonton, usia, platform digital" />
+
+      <label for="sampel">Teknik Sampel:</label>
+      <input type="text" id="sampel" placeholder="Contoh: random sampling" />
+
+      <label for="jumlah">Jumlah Sampel:</label>
+      <input type="text" id="jumlah" placeholder="Contoh: 150 responden" />
+    </div>
+
+    <label for="teori">Teori Internasional (pisahkan dengan koma):</label>
+    <input type="text" id="teori" placeholder="Contoh: Jenkins, Chalaby, Tian Li" />
+
+    <label for="strategi">Strategi yang Dibahas (pisahkan dengan koma):</label>
+    <textarea id="strategi" rows="2" placeholder="Contoh: konvergensi, segmentasi, format global-lokal, media sosial, peran KPI"></textarea>
+
+    <div class="button-group">
+      <button onclick="generatePrompt()">Buat Prompt</button>
+      <button class="copy-btn" onclick="copyToClipboard()">Salin Prompt</button>
+    </div>
+
+    <pre id="output"></pre>
+  </div>
+
+  <script src="assets/js/gen1.js"></script>
+</body>
+</html>

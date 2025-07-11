@@ -1,0 +1,38 @@
+.bi::before,
+[class^="bi-"]::before,
+[class*=" bi-"]::before {
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.bi-arrow-right::before { content: "\f138"; }
+.bi-arrow-up-short::before { content: "\f145"; }
+.bi-bar-chart-line::before { content: "\f17c"; }
+.bi-bell::before { content: "\f18a"; }
+.bi-book::before { content: "\f194"; }
+.bi-check-circle::before { content: "\f26b"; }
+.bi-chevron-down::before { content: "\f282"; }
+.bi-clock::before { content: "\f293"; }
+.bi-facebook::before { content: "\f344"; }
+.bi-folder-check::before { content: "\f3d0"; }
+.bi-gear::before { content: "\f3e5"; }
+.bi-geo-alt::before { content: "\f3e8"; }
+.bi-instagram::before { content: "\f437"; }
+.bi-journals::before { content: "\f447"; }
+.bi-lock-fill::before { content: "\f47a"; }
+.bi-newspaper::before { content: "\f4a3"; }
+.bi-palette2::before { content: "\f4b2"; }
+.bi-pencil-square::before { content: "\f4ca"; }
+.bi-play-btn-fill::before { content: "\f4f0"; }
+.bi-shield-shaded::before { content: "\f53b"; }
+.bi-telephone::before { content: "\f5c1"; }
+.bi-youtube::before { content: "\f62b"; }
+.bi-pc-display::before { content: "\f6a6"; }
+.bi-envelope-at::before { content: "\f84c"; }

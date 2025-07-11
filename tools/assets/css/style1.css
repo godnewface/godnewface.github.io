@@ -1,0 +1,284 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 2rem;
+}
+
+.container {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 700px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+input[type="text"], textarea, select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-size: 0.9rem;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+button {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.copy-btn {
+  background-color: #2196F3;
+}
+
+pre {
+  background: #eee;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  border-radius: 5px;
+  white-space: pre-wrap;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  .container {
+    padding: 1.5rem 1rem;
+    box-shadow: none;
+    border-radius: 0;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  label {
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  input[type="text"], textarea, select {
+    padding: 0.6rem;
+    font-size: 1rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .button-group button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  pre {
+    font-size: 0.9rem;
+    word-break: break-word;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+
+  .container {
+    background-color: #1e1e1e;
+    box-shadow: none;
+  }
+
+  input[type="text"],
+  textarea,
+  select {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    color: #f0f0f0;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: #bbb;
+  }
+
+  button {
+    background-color: #2e7d32;
+  }
+
+  .copy-btn {
+    background-color: #1565c0;
+  }
+
+  pre {
+    background: #2a2a2a;
+    color: #e0e0e0;
+  }
+
+  label {
+    color: #f0f0f0;
+  }
+}
+
+/* === Theme Toggle Switch === */
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px; width: 18px;
+  left: 3px; bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+/* === Theme Styles === */
+body.light {
+  background-color: #f2f2f2;
+  color: #222;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark .container {
+  background-color: #1e1e1e;
+  box-shadow: none;
+}
+
+body.dark input[type="text"],
+body.dark textarea,
+body.dark select {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  color: #f0f0f0;
+}
+
+body.dark input::placeholder,
+body.dark textarea::placeholder {
+  color: #bbb;
+}
+
+body.dark button {
+  background-color: #2e7d32;
+}
+
+body.dark .copy-btn {
+  background-color: #1565c0;
+}
+
+body.dark pre {
+  background: #2a2a2a;
+  color: #e0e0e0;
+}
+
+body.dark label {
+  color: #f0f0f0;
+}
+
+/* === Top Bar === */
+.topbar {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 1000;
+}
+
+.home-btn {
+  text-decoration: none;
+  background-color: #666;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.home-btn:hover {
+  background-color: #444;
+}
+
+body.dark .home-btn {
+  background-color: #888;
+  color: #fff;
+}
+
+body.dark .home-btn:hover {
+  background-color: #aaa;
+}

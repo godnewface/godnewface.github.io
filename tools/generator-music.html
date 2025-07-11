@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>godnewface | Generator AI Music</title>
+  <link rel="stylesheet" href="assets/css/style2.css">
+</head>
+<body>
+
+  <h1>🎵 Generator AI Music</h1>
+
+
+  <div class="tab-buttons">
+    <button class="tab-btn active" data-tab="lyrics">Lyrics Input</button>
+    <button class="tab-btn" data-tab="structure">Structure & Style</button>
+    <button class="tab-btn" data-tab="output">Output</button>
+  </div>
+  
+  <div id="lyrics" class="tab-content active">
+    <fieldset>
+      <legend><strong>Lyrics Input</strong></legend>
+      <textarea id="lyricsInput" rows="10" placeholder="Tulis lirik dengan tag seperti [Verse 1], [Chorus 1], dst..."></textarea>
+    </fieldset>
+  </div>
+  
+  <div id="structure" class="tab-content">
+    <fieldset>
+      <legend><strong>Struktur Lagu & Style</strong></legend>
+      <div id="structureInputs"></div>
+    </fieldset>
+  </div>
+  
+  <div id="output" class="tab-content">
+    <fieldset>
+      <legend><strong>Output Lirik Bertag</strong></legend>
+      <button onclick="generateTaggedLyrics()">Generate</button>
+      <button onclick="copyOutput()">Copy Output</button>
+      <pre id="outputText"></pre>
+    </fieldset>
+  </div>
+
+  <script src="assets/js/gen2.js"></script>
+</body>
+</html>
