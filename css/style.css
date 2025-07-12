@@ -124,7 +124,7 @@ ol {
   text-transform: uppercase;
   margin-bottom: 6px;
 }
-.section-title h2 {
+.section-title h1 h2 {
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
@@ -430,7 +430,7 @@ ol {
   top: 0;
   opacity: 1;
 }
-.hero__slider.owl-carousel .owl-item.active .hero__text h2 {
+.hero__slider.owl-carousel .owl-item.active .hero__text h1 h2 {
   top: 0;
   opacity: 1;
 }
@@ -494,7 +494,7 @@ ol {
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
 }
-.hero__text h2 {
+.hero__text h1 h2 {
   color: #ffffff;
   font-size: 60px;
   font-weight: 700;
