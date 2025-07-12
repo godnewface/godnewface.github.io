@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompt Generator untuk Lelucon AI</title>
+  <link rel="stylesheet" href="assets/css/style4.css" />
+  <script src="assets/js/gen4.js"></script>
+</head>
+<body>
+  <h1>🎭 AI Joke Prompt Generator</h1>
+
+  <label for="category">Kategori:</label>
+  <input type="text" id="category" placeholder="misal: kantor, AI, Gen-X" />
+
+  <label for="style">Gaya Humor:</label>
+  <input type="text" id="style" placeholder="dark, absurd, slapstick, sarkasme" />
+
+  <label for="keywords">Kata Kunci:</label>
+  <input type="text" id="keywords" placeholder="contoh: wifi, spreadsheet, ayam" />
+
+  <label for="language">Bahasa:</label>
+  <select id="language">
+    <option value="id">Bahasa Indonesia</option>
+    <option value="en">English</option>
+  </select>
+
+  <div class="button-row">
+    <button onclick="generatePrompt()">Generate Prompt</button>
+    <button onclick="copyToClipboard()">Salin / Copy</button>
+  </div>
+
+  <pre id="result"></pre>
+
+  <div id="link-box" style="display:none; margin-top: 1em">
+    <p><strong>Chat AI:</strong></p>
+    <a id="chatgpt-link" href="#" target="_blank">ChatGPT</a><br>
+    <a id="deepseek-link" href="#" target="_blank">DeepSeek</a>
+  </div>
+</body>
+</html>
