@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prompt Generator Akademik</title>
+    <link rel="stylesheet" href="assets/css/style5.css" />
+  </head>
+  <body>
+    <h1>🎓 Prompt Generator Akademik</h1>
+    <form id="promptForm">
+      <label for="judul">Judul Jurnal / Buku</label>
+      <input type="text" id="judul" required placeholder="Masukkan judul" />
+
+      <label for="penulis">Penulis</label>
+      <input type="text" id="penulis" required placeholder="Nama penulis" />
+
+      <label for="jurnal">Jurnal / Penerbit</label>
+      <input
+        type="text"
+        id="jurnal"
+        placeholder="Jurnal atau penerbit jika buku"
+      />
+
+      <label for="volume">Volume / Edisi</label>
+      <input type="text" id="volume" placeholder="Nomor volume atau edisi" />
+
+      <label for="tahun">Tahun</label>
+      <input type="number" id="tahun" required placeholder="Tahun publikasi" />
+
+      <label for="doi">DOI / ISBN</label>
+      <input type="text" id="doi" placeholder="DOI atau ISBN jika ada" />
+
+      <button type="submit">🔍 Generate Prompt</button>
+    </form>
+
+    <div class="output" id="result"></div>
+
+    <div class="actions" id="actionButtons" style="display: none">
+      <button onclick="copyPrompt()">📋 Salin Prompt</button>
+      <a href="https://chat.openai.com/" target="_blank">🚀 Buka ChatGPT</a>
+      <a href="https://deepseek.com/chat" target="_blank">🧠 Buka DeepSeek</a>
+      <a class="scholar" href="#" id="scholarLink" target="_blank"
+        >🔎 Google Scholar</a
+      >
+      <a class="arxiv" href="#" id="arxivLink" target="_blank"
+        >📄 Cari di arXiv</a
+      >
+      <a class="doi" href="#" id="doiLink" target="_blank">🔗 Resolusi DOI</a>
+    </div>
+
+    <script src="assets/js/gen5.js"></script>
+  </body>
+</html>
