@@ -33,9 +33,9 @@ document.getElementById("promptForm").addEventListener("submit", function (e) {
     : "https://doi.org/";
 });
 
-function copyPrompt() {
-  const text = document.getElementById("result").textContent;
+document.getElementById('copyBtn').addEventListener('click', function() {
+  const text = document.getElementById('result').textContent;
   navigator.clipboard.writeText(text).then(() => {
-    alert("Prompt berhasil disalin!");
+    alert('Prompt berhasil disalin!');
   });
-}
+});
