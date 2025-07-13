@@ -7,34 +7,34 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1 id="title">Judul Lagu</h1>
-  <p><strong>Genre:</strong> <span id="genre"></span></p>
-  <iframe id="youtube" src="" allowfullscreen></iframe>
-  <p id="description"></p>
-  <div class="lyrics" id="lyrics"></div>
-
-  <script>
-    // Ambil parameter ?json=...
-    const urlParams = new URLSearchParams(window.location.search);
-    const jsonPath = urlParams.get('json');
-
-    if (jsonPath) {
-      fetch(jsonPath)
-        .then(res => res.json())
-        .then(data => {
-          document.getElementById('title').textContent = data.title;
-          document.getElementById('genre').textContent = data.genre;
-          document.getElementById('youtube').src = data.youtube;
-          document.getElementById('description').textContent = data.description;
-          document.getElementById('lyrics').textContent = data.lyrics;
-        })
-        .catch(err => {
-          document.body.innerHTML = '<p style="color:red">Gagal memuat data JSON.</p>';
-        });
-    } else {
-      document.body.innerHTML = '<p style="color:orange">Parameter JSON tidak ditemukan.</p>';
-    }
+    <div id="musicModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeMusicModal()">&times;</span>
+        <iframe id="musicFrame" src=""></iframe>
+      </div>
+    </div>
+    
+    <script>
+      function openMusicModal(jsonPath) {
+        const modal = document.getElementById("musicModal");
+        const frame = document.getElementById("musicFrame");
+        frame.src = `template.html?json=${jsonPath}`;
+        modal.style.display = "block";
+      }
+    
+      function closeMusicModal() {
+        const modal = document.getElementById("musicModal");
+        const frame = document.getElementById("musicFrame");
+        frame.src = "";
+        modal.style.display = "none";
+      }
+    
+      window.onclick = function (e) {
+        const modal = document.getElementById("musicModal");
+        if (e.target === modal) {
+          closeMusicModal();
+        }
+      };
     </script>
   </body>
 </html>
