@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pertanyaan Aneh Tapi Dalam</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #111;
+        --text: #f2f2f2;
+        --accent: #00ffc3;
+        --box: #1c1c1c;
+      }
+      * {
+        box-sizing: border-box;
+        transition: all 0.3s ease;
+      }
+      body {
+        margin: 0;
+        font-family: "Figtree", sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+      }
+      h1 {
+        color: var(--accent);
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+      }
+      select,
+      button {
+        padding: 0.5rem 1rem;
+        margin: 0.5rem;
+        background: var(--box);
+        border: 1px solid var(--accent);
+        color: var(--text);
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        transition: background 0.3s ease, color 0.3s ease;
+      }
+      button:hover {
+        background: var(--accent);
+        color: var(--bg);
+        cursor: pointer;
+      }
+      .output {
+        margin-top: 2rem;
+        background: var(--box);
+        padding: 1.5rem;
+        border-radius: 0.75rem;
+        border: 1px solid var(--accent);
+        max-width: 100%;
+        width: 600px;
+        text-align: center;
+        font-size: 1.2rem;
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      .output.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .controls {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        max-width: 800px;
+      }
+      @media (max-width: 600px) {
+        .controls select,
+        .controls button {
+          flex: 1 1 100%;
+          margin: 0.25rem 0;
+        }
+        .output {
+          font-size: 1rem;
+          padding: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pertanyaan Aneh Tapi Dalam</h1>
+    <div class="controls">
+      <select id="mood">
+        <option value="random">Mood: Random</option>
+        <option value="absurd">Absurd</option>
+        <option value="filosofis">Filosofis</option>
+        <option value="gelap">Lucu Gelap</option>
+        <option value="serius">Serius</option>
+      </select>
+      <select id="topic">
+        <option value="random">Topik: Random</option>
+        <option value="waktu">Waktu</option>
+        <option value="identitas">Identitas</option>
+        <option value="teknologi">Teknologi</option>
+        <option value="mimpi">Mimpi</option>
+        <option value="binatang">Binatang</option>
+      </select>
+      <select id="lang">
+        <option value="id">🇮🇩 Bahasa</option>
+        <option value="en">🇬🇧 Language</option>
+      </select>
+      <button onclick="generatePrompt()">🎲 Generate Prompt</button>
+      <button onclick="copyToClipboard()">📋 Copy</button>
+      <button onclick="openChatGPT()">🤖 ChatGPT</button>
+    </div>
+    <div class="output" id="output">Prompt akan muncul di sini...</div>
+
+    <script>
+      let promptDB = {};
+
+      fetch("assets/json/absurditas.json")
+        .then((response) => response.json())
+        .then((data) => (promptDB = data))
+        .catch((err) => {
+          console.error("Gagal memuat prompts.json:", err);
+          document.getElementById("output").textContent =
+            "⚠️ Gagal memuat data prompt.";
+        });
+
+      function generatePrompt() {
+        const lang = document.getElementById("lang").value;
+        const mood = document.getElementById("mood").value;
+        const topic = document.getElementById("topic").value;
+
+        const list = promptDB[lang] || [];
+        const filtered = list.filter(
+          (p) =>
+            (mood === "random" || p.mood === mood) &&
+            (topic === "random" || p.topic === topic)
+        );
+
+        const prompt = filtered.length
+          ? filtered[Math.floor(Math.random() * filtered.length)].text
+          : "Tidak ada prompt yang cocok dengan filter.";
+
+        const outputEl = document.getElementById("output");
+        outputEl.classList.remove("show");
+        void outputEl.offsetWidth; // trigger reflow
+        outputEl.textContent = prompt;
+        outputEl.classList.add("show");
+      }
+
+      function copyToClipboard() {
+        const text = document.getElementById("output").textContent;
+        navigator.clipboard
+          .writeText(text)
+          .then(() => alert("✅ Prompt disalin!"));
+      }
+
+      function openChatGPT() {
+        const text = document.getElementById("output").textContent;
+        const url = `https://chat.openai.com/?prompt=${encodeURIComponent(
+          text
+        )}`;
+        window.open(url, "_blank");
+      }
+    </script>
+  </body>
+</html>
