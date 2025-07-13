@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Template Lagu</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title"></h1>
+      <div id="genre" class="genre"></div>
+
+      <div class="video-wrapper">
+        <iframe id="video" allowfullscreen></iframe>
+      </div>
+
+      <h2>Deskripsi</h2>
+      <p id="description"></p>
+
+      <h2>Lirik</h2>
+      <div id="lyrics" class="lyrics"></div>
+    </div>
+
+    <script>
+      async function loadContent(jsonUrl) {
+        const res = await fetch(jsonUrl);
+        const data = await res.json();
+
+        document.getElementById("title").textContent = data.title;
+        document.getElementById("genre").textContent = data.genre;
+        document.getElementById("video").src = data.youtube;
+        document.getElementById("description").textContent = data.description;
+        document.getElementById("lyrics").textContent = data.lyrics;
+      }
+
+      // Panggil saat file ini di-load dalam iframe/modal
+      const urlParams = new URLSearchParams(window.location.search);
+      const jsonUrl = urlParams.get("json"); // ex: ?json=assets/json/liturgi-kegelapan.json
+      if (jsonUrl) loadContent(jsonUrl);
+    </script>
+  </body>
+</html>
