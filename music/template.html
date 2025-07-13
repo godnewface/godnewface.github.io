@@ -8,36 +8,33 @@
   </head>
   <body>
     <div class="container">
-      <h1 id="title"></h1>
-      <div id="genre" class="genre"></div>
+      <h1 id="title">Judul Lagu</h1>
+  <p><strong>Genre:</strong> <span id="genre"></span></p>
+  <iframe id="youtube" src="" allowfullscreen></iframe>
+  <p id="description"></p>
+  <div class="lyrics" id="lyrics"></div>
 
-      <div class="video-wrapper">
-        <iframe id="video" allowfullscreen></iframe>
-      </div>
+  <script>
+    // Ambil parameter ?json=...
+    const urlParams = new URLSearchParams(window.location.search);
+    const jsonPath = urlParams.get('json');
 
-      <h2>Deskripsi</h2>
-      <p id="description"></p>
-
-      <h2>Lirik</h2>
-      <div id="lyrics" class="lyrics"></div>
-    </div>
-
-    <script>
-      async function loadContent(jsonUrl) {
-        const res = await fetch(jsonUrl);
-        const data = await res.json();
-
-        document.getElementById("title").textContent = data.title;
-        document.getElementById("genre").textContent = data.genre;
-        document.getElementById("video").src = data.youtube;
-        document.getElementById("description").textContent = data.description;
-        document.getElementById("lyrics").textContent = data.lyrics;
-      }
-
-      // Panggil saat file ini di-load dalam iframe/modal
-      const urlParams = new URLSearchParams(window.location.search);
-      const jsonUrl = urlParams.get("json"); // ex: ?json=assets/json/liturgi-kegelapan.json
-      if (jsonUrl) loadContent(jsonUrl);
+    if (jsonPath) {
+      fetch(jsonPath)
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById('title').textContent = data.title;
+          document.getElementById('genre').textContent = data.genre;
+          document.getElementById('youtube').src = data.youtube;
+          document.getElementById('description').textContent = data.description;
+          document.getElementById('lyrics').textContent = data.lyrics;
+        })
+        .catch(err => {
+          document.body.innerHTML = '<p style="color:red">Gagal memuat data JSON.</p>';
+        });
+    } else {
+      document.body.innerHTML = '<p style="color:orange">Parameter JSON tidak ditemukan.</p>';
+    }
     </script>
   </body>
 </html>
