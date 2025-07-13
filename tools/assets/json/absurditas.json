@@ -1,2006 +1,1898 @@
-{
-  "id": [
-    {
-      "mood": "gelap",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "mimpi",
-      "text": "Bagaimana jika mimpi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "identitas",
-      "text": "Bagaimana jika identitas bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "waktu",
-      "text": "Bagaimana jika waktu bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "serius",
-      "topic": "teknologi",
-      "text": "Bagaimana jika teknologi bisa berbicara dengan manusia?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "binatang",
-      "text": "Bagaimana jika binatang bisa berbicara dengan manusia?"
-    }
-  ],
-  "en": [
-    {
-      "mood": "absurd",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "binatang",
-      "text": "What if binatang could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "binatang",
-      "text": "What if binatang could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "binatang",
-      "text": "What if binatang could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "binatang",
-      "text": "What if binatang could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "binatang",
-      "text": "What if binatang could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "binatang",
-      "text": "What if binatang could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "binatang",
-      "text": "What if binatang could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "binatang",
-      "text": "What if binatang could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "binatang",
-      "text": "What if binatang could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "binatang",
-      "text": "What if binatang could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "binatang",
-      "text": "What if binatang could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "binatang",
-      "text": "What if binatang could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "binatang",
-      "text": "What if binatang could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "binatang",
-      "text": "What if binatang could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "binatang",
-      "text": "What if binatang could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "binatang",
-      "text": "What if binatang could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "binatang",
-      "text": "What if binatang could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "binatang",
-      "text": "What if binatang could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "binatang",
-      "text": "What if binatang could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "binatang",
-      "text": "What if binatang could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "binatang",
-      "text": "What if binatang could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "binatang",
-      "text": "What if binatang could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "binatang",
-      "text": "What if binatang could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "binatang",
-      "text": "What if binatang could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "binatang",
-      "text": "What if binatang could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "binatang",
-      "text": "What if binatang could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "binatang",
-      "text": "What if binatang could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "binatang",
-      "text": "What if binatang could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "binatang",
-      "text": "What if binatang could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "waktu",
-      "text": "What if waktu could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "teknologi",
-      "text": "What if teknologi could speak to humans?"
-    },
-    {
-      "mood": "filosofis",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "binatang",
-      "text": "What if binatang could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "binatang",
-      "text": "What if binatang could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "absurd",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "gelap",
-      "topic": "mimpi",
-      "text": "What if mimpi could speak to humans?"
-    },
-    {
-      "mood": "serius",
-      "topic": "identitas",
-      "text": "What if identitas could speak to humans?"
-    }
-  ]
-}
+[
+  {
+    "question": "Kalau semangka bisa bicara, kenapa dia memilih diam saat dipotong?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Apakah waktu juga pernah terlambat?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "waktu"
+    ]
+  },
+  {
+    "question": "Kenapa kursi nggak pernah protes saat diduduki terus?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Kalau awan itu kapas raksasa, siapa yang punya cotton bud-nya?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah bayangan kita sebenarnya adalah alien pemalu?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Kenapa kucing tidak pernah ikut pemilu?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "binatang"
+    ]
+  },
+  {
+    "question": "Jika uang bisa tumbuh di pohon, apakah dompet akan punya akar?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Mengapa roti bakar selalu jatuh di sisi mentega?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Apakah semut pernah mengeluh soal pekerjaan mereka ke HRD?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "binatang"
+    ]
+  },
+  {
+    "question": "Jika mimpi adalah realitas lain, siapa yang bermimpi tentang kita?",
+    "mood": [
+      "absurd",
+      "filosofis"
+    ],
+    "topic": [
+      "mimpi",
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah huruf “Z” merasa tersisih karena selalu terakhir?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika kulkas punya perasaan, apakah dia kesepian saat malam?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Apakah alarm pernah bosan membangunkan kita?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "waktu",
+      "identitas"
+    ]
+  },
+  {
+    "question": "Jika kopi bisa bernyanyi, genre musiknya apa?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Apakah air pernah berpikir untuk menjadi padat selamanya?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika sapi bisa selfie, apakah mereka pilih filter \"vintage\"?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "binatang"
+    ]
+  },
+  {
+    "question": "Kenapa manusia takut pada laba-laba, tapi tidak pada cermin?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Jika WiFi adalah makhluk hidup, apakah dia merasa capek?",
+    "mood": [
+      "absurd",
+      "serius",
+      "filosofis"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah remote TV pernah iri sama smartphone?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "teknologi"
+    ]
+  },
+  {
+    "question": "Jika bulan adalah lampu, siapa yang bayar listriknya?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "teknologi",
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah kertas merasa bersalah saat dihancurkan?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika keju bisa menangis, rasanya jadi asin atau asin banget?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Kenapa manusia nggak bisa mendengkur sambil berdiri?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika tisu punya jiwa, apakah dia punya trauma masa lalu?",
+    "mood": [
+      "absurd",
+      "filosofis"
+    ],
+    "topic": [
+      "waktu"
+    ]
+  },
+  {
+    "question": "Apakah Google pernah capek menjawab pertanyaan bodoh?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Kalau waktu adalah lingkaran, di mana titik diamnya?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "waktu"
+    ]
+  },
+  {
+    "question": "Kenapa kita tidur di malam hari, bukan saat rapat penting?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "waktu",
+      "mimpi",
+      "identitas"
+    ]
+  },
+  {
+    "question": "Jika tanaman bisa balas chat, mereka slow response atau spammer?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah gravitasi pernah iseng mencabut benda acak?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Kalau kaca pecah, apakah dia merasa gagal jadi dirinya?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika email punya perasaan, apakah dia sedih saat dihapus?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "teknologi"
+    ]
+  },
+  {
+    "question": "Kenapa bantal nggak pernah minta diganti posisi?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Apakah jam tangan tahu kalau dia sedang memperbudak waktu?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "waktu"
+    ]
+  },
+  {
+    "question": "Jika keyboard bisa bicara, tombol mana yang paling cerewet?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Kenapa orang takut hantu tapi tidak takut invoice?",
+    "mood": [
+      "lucu gelap",
+      "absurd"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Jika langit punya wallpaper, siapa yang mendesainnya?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah dinosaurus sebenarnya cuma cuti panjang?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "binatang"
+    ]
+  },
+  {
+    "question": "Jika matahari adalah bola lampu, siapa yang saklarnya?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "waktu",
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah bintang juga pernah overthinking?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Kalau hati bisa nge-tweet, isinya lebih galau atau marah?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Kenapa kita belum menemukan planet yang penuh kopi?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Jika tawa bisa dikalengkan, apakah dijual dengan rasa stroberi?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Apakah pintu merasa terhina kalau dikunci dari luar?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika hujan adalah not musik, lagu apa yang sedang turun?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Apakah televisi bermimpi jadi lukisan saat dimatikan?",
+    "mood": [
+      "lucu gelap",
+      "absurd"
+    ],
+    "topic": [
+      "teknologi",
+      "mimpi",
+      "identitas"
+    ]
+  },
+  {
+    "question": "Kalau semesta ini simulasi, siapa programmernya?",
+    "mood": [
+      "absurd",
+      "filosofis"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Jika bayangan kita bisa jalan-jalan sendiri, dia liburan ke mana?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Kenapa listrik nggak pernah kehabisan energi?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "teknologi"
+    ]
+  },
+  {
+    "question": "Apakah planet Pluto sebenarnya hanya introvert?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika malam bisa bicara, apakah dia menyuruh pagi untuk diam?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Apakah telur tahu siapa duluan: dia atau ayam?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Kenapa angka 13 dianggap sial, padahal 4 lebih sering dipakai matematika?",
+    "mood": [
+      "lucu gelap",
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika wajah kita adalah peta, kenapa alis tidak ada di legenda?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Kalau kita adalah karakter film, siapa sutradaranya?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah mata pernah lelah melihat dunia yang sama setiap hari?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "waktu"
+    ]
+  },
+  {
+    "question": "Kenapa kulkas tidak pernah protes meski dibuka-buka terus?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika suara bisa dimakan, rasa jeritan itu apa?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Apakah pelangi itu cuma WiFi visual dari surga?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika password kita hidup, apakah mereka suka disalahtebak?",
+    "mood": [
+      "absurd",
+      "filosofis"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah gigi pernah iri sama kuku karena bisa tumbuh lagi?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Kenapa lampu merah nggak pernah merasa bersalah bikin macet?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika kebohongan bisa tumbuh, apakah kita butuh tukang kebun etika?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Kalau waktu adalah kucing, apakah dia suka tidur siang juga?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "binatang",
+      "waktu",
+      "mimpi"
+    ]
+  },
+  {
+    "question": "Apakah langit pernah ingin jadi lautan?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika kata-kata punya aroma, kata “masalah” baunya apa?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "waktu"
+    ]
+  },
+  {
+    "question": "Kenapa bulu mata nggak pernah minta libur?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Apakah toilet adalah tempat meditasi terdalam manusia modern?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Kalau awan adalah makhluk hidup, apakah dia suka peluk gunung?",
+    "mood": [
+      "absurd",
+      "filosofis"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah senyuman palsu punya rasa?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika gravitasi cuti sehari, apakah kita langsung cosplay jadi astronot?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "waktu",
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah kaca mata merasa beban karena tahu semua rahasia kita?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Jika bintang jatuh adalah error sistem semesta, siapa teknisinya?",
+    "mood": [
+      "absurd",
+      "filosofis"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah lagu sedih menyimpan air mata sendiri?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Kenapa kucing selalu tahu kalau kita sedih?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "binatang",
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah password kita sebenarnya agen rahasia?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Jika bumi bisa unfollow manusia, kapan dia akan melakukannya?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah meja pernah berharap jadi trampolin?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika udara punya rasa, rasa kebohongan itu seperti apa?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Apakah klakson mobil adalah bentuk ekspresi batin mesin?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Kalau selfie adalah dosa, apakah filter adalah iblisnya?",
+    "mood": [
+      "lucu gelap",
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika semua orang bermimpi di waktu bersamaan, apakah itu Zoom alam bawah sadar?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "waktu",
+      "mimpi",
+      "identitas"
+    ]
+  },
+  {
+    "question": "Kenapa taksi disebut “angkot mahal” padahal dia juga ngangkot?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika cinta bisa dikirim lewat email, apakah butuh attachment?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "teknologi"
+    ]
+  },
+  {
+    "question": "Apakah buku iri sama e-book?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Kalau hantu bisa selfie, apakah dia kelihatan?",
+    "mood": [
+      "lucu gelap",
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika bantal punya jurnal, berapa banyak air mata yang dia simpan?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Apakah listrik punya rasa sakit saat korslet?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "teknologi"
+    ]
+  },
+  {
+    "question": "Jika televisi bisa menonton manusia, acara favoritnya apa?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "teknologi"
+    ]
+  },
+  {
+    "question": "Kenapa kita lebih percaya Google daripada insting sendiri?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah kereta api juga butuh libur akhir pekan?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika napas adalah lagu, apa judul hidupmu sekarang?",
+    "mood": [
+      "absurd",
+      "filosofis"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah lilin sedih saat dia menerangi kematian dirinya?",
+    "mood": [
+      "lucu gelap",
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Kenapa penghapus tidak bisa menghapus masa lalu?",
+    "mood": [
+      "lucu gelap",
+      "absurd"
+    ],
+    "topic": [
+      "waktu"
+    ]
+  },
+  {
+    "question": "Kalau waktu adalah makanan, apakah kita sedang dimasak atau dimakan?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "waktu",
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah pikiran bisa tersesat dalam dirinya sendiri?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika mimpi adalah bioskop jiwa, apakah kamu penonton atau sutradara?",
+    "mood": [
+      "absurd",
+      "filosofis"
+    ],
+    "topic": [
+      "mimpi",
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah kata-kata pernah bosan dipelintir manusia?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika pikiran bisa dicetak, apakah hasilnya berupa puisi atau laporan polisi?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Apakah suara hujan adalah suara planet yang menangis?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika absurd adalah agama, apakah kamu sudah percaya?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika kaki bisa bermimpi, apakah dia ingin jadi tangan?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "mimpi",
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah bayangan merasa kesepian di kegelapan?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika huruf bisa marah, apakah huruf kapital lebih emosional?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Kenapa pensil selalu kehilangan ujung saat kita paling butuhnya?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah kaca punya rasa malu saat memantulkan wajah kusut?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika mata bisa menyimpan file, berapa gigabyte kenangan kamu?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Apakah malam iri pada matahari karena semua tidur saat dia berjaga?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "waktu",
+      "mimpi"
+    ]
+  },
+  {
+    "question": "Jika air hujan adalah pesan dari langit, apa isinya?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Kenapa mesin ATM nggak pernah bilang “terima kasih”?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika manusia bisa reboot, apakah kita akan jadi lebih baik?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah sepatu pernah merasa bosan menginjak tempat yang sama?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Kalau langit punya akun Instagram, isinya langit atau selfie bintang?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah nasi goreng sadar dia mantan nasi putih?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika musik adalah bahasa alien, apakah mereka sedang menyapa?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Kenapa jendela tidak pernah pindah lokasi meskipun bosan?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika bantal bisa tertawa, apakah dia geli saat kena air liur?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Apakah emoji menangis bahagia benar-benar bahagia?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika gravitasi adalah kontrak kerja, siapa HRD-nya?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah suara kita juga punya mimpi?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "mimpi",
+      "identitas"
+    ]
+  },
+  {
+    "question": "Jika mesin waktu ada, apakah waktu juga bisa menolak ditumpangi?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "waktu"
+    ]
+  },
+  {
+    "question": "Kenapa mimpi tidak pernah punya jam dinding?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "waktu",
+      "mimpi",
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah toilet umum punya trauma masa lalu?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "waktu"
+    ]
+  },
+  {
+    "question": "Jika pikiran bisa dilukis, apakah bentuknya kabut atau pelangi?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Apakah alarm senang melihat kita panik setiap pagi?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "waktu",
+      "identitas"
+    ]
+  },
+  {
+    "question": "Jika batu bisa curhat, berapa banyak yang dia tahan selama ini?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Kenapa kancing baju tidak pernah jadi tren fesyen utama?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Apakah kata “diam” sebenarnya berisik di kepala?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika hujan punya tujuan, apakah dia ingin menyiram emosi kita?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah kalender tahu betapa berpengaruhnya dia?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Kalau semesta adalah novel, di bab mana kita sekarang?",
+    "mood": [
+      "absurd",
+      "filosofis"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Jika kesunyian bisa bicara, suaranya seperti apa?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Apakah spion mobil pernah melihat sesuatu yang tak bisa dia ungkapkan?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Kenapa mimpi selalu lari sebelum kita bisa peluk?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "mimpi",
+      "identitas"
+    ]
+  },
+  {
+    "question": "Jika nasi bisa memilih, apakah dia mau jadi lontong atau sushi?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Apakah kucing sebenarnya tahu arti hidup tapi sengaja diam?",
+    "mood": [
+      "absurd",
+      "filosofis"
+    ],
+    "topic": [
+      "binatang",
+      "identitas"
+    ]
+  },
+  {
+    "question": "Jika cinta adalah sinyal WiFi, berapa kecepatan download-nya?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Apakah handphone pernah cemburu karena kita tidur lebih lama dari biasanya?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "mimpi",
+      "identitas"
+    ]
+  },
+  {
+    "question": "Jika udara punya warna, apakah kita bisa melihat emosi orang?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah tawa bisa pecah seperti kaca?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Kalau jalan raya bisa bicara, dia akan cerita tentang apa?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Apakah hujan gerimis adalah air mata langit yang malu-malu?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika TV bisa melukis, apa yang akan dia gambar?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Apakah kita hanya notasi dalam simfoni kosmik?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Jika tidur adalah tombol reset, kenapa kadang bangun tetap error?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "mimpi"
+    ]
+  },
+  {
+    "question": "Apakah tangga pernah lelah naik turun?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika piring bisa berdiskusi, apakah dia akan komplain soal cuci-mencuci?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Kenapa jarum jam tidak pernah berpikir untuk mundur?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "waktu"
+    ]
+  },
+  {
+    "question": "Jika suara hati bisa direkam, mau kamu dengar?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Apakah WiFi adalah bentuk cinta yang tak terlihat tapi bikin marah saat hilang?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika angin punya nama, apa panggilan kesayangannya?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah keheningan adalah suara paling jujur?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika waktu punya playlist, lagu pertama apa yang dia putar?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "waktu"
+    ]
+  },
+  {
+    "question": "Kenapa langit tidak pernah jatuh meskipun berat?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika kita bisa melihat pikiran, bentuknya awan atau labirin?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah jari kita pernah merasa bersalah saat salah ketik?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Jika keringat bisa bicara, apa dia bilang waktu kita olahraga?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "waktu",
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah malam minggu juga bosan dengan status jomblo?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika ide bisa tumbuh di pot, apakah kamu sudah siram hari ini?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "waktu"
+    ]
+  },
+  {
+    "question": "Kenapa catatan kaki selalu dianggap pinggiran, padahal kadang penting?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Apakah bayangan takut kehilangan tubuhnya?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Jika makanan bisa nulis review, kira-kira siapa dapet bintang satu?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah sepatu punya impian jadi sandal?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Kalau jalanan bisa ngetweet, pasti isinya keluhan soal ban kempes ya?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika hujan dan matahari pacaran, siapa yang paling posesif?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "waktu",
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah keyboard tahu rahasia hidup kita lebih banyak dari teman?",
+    "mood": [
+      "absurd",
+      "serius",
+      "filosofis"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Kalau waktu bisa berhenti sebentar, apa yang ingin kamu bilang ke dia?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "waktu"
+    ]
+  },
+  {
+    "question": "Apakah jendela iri sama pintu karena bisa dilewati?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika diam adalah senjata, kenapa kita sering menyalahgunakannya?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Kenapa kita bilang “diam” tapi maksudnya “ngambek”?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Jika kata “absurd” adalah orang, bagaimana gaya bicaranya?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Apakah meja kerja pernah bermimpi jadi ranjang?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "mimpi",
+      "identitas"
+    ]
+  },
+  {
+    "question": "Jika pikiran bisa memeluk, siapa yang ingin kamu peluk hari ini?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "waktu",
+      "identitas"
+    ]
+  },
+  {
+    "question": "Kenapa mimpi indah sering berakhir saat alarm bunyi?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "waktu",
+      "mimpi",
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah daun pernah bosan jatuh tiap musim?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika pohon bisa update status, apa caption musim gugurnya?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Apakah mata kita pernah bohong saat lihat cinta pertama?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Jika kita hidup di mimpi orang lain, siapa dia?",
+    "mood": [
+      "absurd",
+      "filosofis"
+    ],
+    "topic": [
+      "mimpi",
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah roti bakar merasa lebih hidup saat berasap?",
+    "mood": [
+      "absurd",
+      "serius",
+      "filosofis"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Jika rindu bisa dikemas, apakah akan meledak saat dibuka?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Apakah langit menyimpan semua rahasia yang teriak dalam hati?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Kenapa kita bilang “berat” untuk perasaan yang tak terlihat?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Jika hari bisa ngomel, hari Senin bakal paling berisik?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "waktu"
+    ]
+  },
+  {
+    "question": "Apakah detik pernah merasa remeh karena terlalu kecil?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "waktu"
+    ]
+  },
+  {
+    "question": "Kalau jalan hidup bisa dipilih kayak menu restoran, kamu pilih yang mana?",
+    "mood": [
+      "absurd",
+      "filosofis"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Jika pertanyaan absurd adalah alien, apakah kita baru saja membuka portal?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah kata “maaf” terlalu sering disalahgunakan?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika pikiran punya playlist, genre favoritnya apa?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Apakah bunga iri pada kembang api karena lebih cepat dilihat orang?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Kenapa kenangan buruk lebih rajin muncul daripada kenangan indah?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika sinyal hilang adalah tanda semesta suruh istirahat, kenapa kita marah?",
+    "mood": [
+      "absurd",
+      "filosofis"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah pelukan bisa menghapus RAM emosional?",
+    "mood": [
+      "absurd",
+      "serius"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Jika masa depan bisa nonton kita, dia bangga atau geleng-geleng?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "waktu",
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah cinta punya masa kadaluarsa?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "waktu"
+    ]
+  },
+  {
+    "question": "Jika kesendirian bisa dipeluk, bentuknya seperti apa?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Apakah malam tahu kita sering bohong pada diri sendiri?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Jika rindu bisa berjalan, apakah dia lari atau jalan santai?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "lainnya"
+    ]
+  },
+  {
+    "question": "Kenapa kita lebih takut diam orang lain daripada teriakannya?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Jika absurd adalah genre hidup, kamu termasuk karakter utama?",
+    "mood": [
+      "absurd",
+      "filosofis"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  },
+  {
+    "question": "Apakah hati pernah demo minta waktu istirahat?",
+    "mood": [
+      "absurd"
+    ],
+    "topic": [
+      "waktu"
+    ]
+  },
+  {
+    "question": "Jika kita bisa tanya satu hal ke semesta dan dia jawab jujur, kamu tanya apa?",
+    "mood": [
+      "absurd",
+      "filosofis"
+    ],
+    "topic": [
+      "identitas"
+    ]
+  }
+]

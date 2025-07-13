@@ -1,170 +1,144 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pertanyaan Aneh Tapi Dalam</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      :root {
-        --bg: #111;
-        --text: #f2f2f2;
-        --accent: #00ffc3;
-        --box: #1c1c1c;
-      }
-      * {
-        box-sizing: border-box;
-        transition: all 0.3s ease;
-      }
-      body {
-        margin: 0;
-        font-family: "Figtree", sans-serif;
-        background-color: var(--bg);
-        color: var(--text);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 2rem;
-      }
-      h1 {
-        color: var(--accent);
-        font-size: 2rem;
-        text-align: center;
-        margin-bottom: 1.5rem;
-      }
-      select,
-      button {
-        padding: 0.5rem 1rem;
-        margin: 0.5rem;
-        background: var(--box);
-        border: 1px solid var(--accent);
-        color: var(--text);
-        border-radius: 0.5rem;
-        font-size: 1rem;
-        transition: background 0.3s ease, color 0.3s ease;
-      }
-      button:hover {
-        background: var(--accent);
-        color: var(--bg);
-        cursor: pointer;
-      }
-      .output {
-        margin-top: 2rem;
-        background: var(--box);
-        padding: 1.5rem;
-        border-radius: 0.75rem;
-        border: 1px solid var(--accent);
-        max-width: 100%;
-        width: 600px;
-        text-align: center;
-        font-size: 1.2rem;
-        opacity: 0;
-        transform: translateY(10px);
-      }
-      .output.show {
-        opacity: 1;
-        transform: translateY(0);
-      }
-      .controls {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-        max-width: 800px;
-      }
-      @media (max-width: 600px) {
-        .controls select,
-        .controls button {
-          flex: 1 1 100%;
-          margin: 0.25rem 0;
-        }
-        .output {
-          font-size: 1rem;
-          padding: 1rem;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Pertanyaan Aneh Tapi Dalam</h1>
-    <div class="controls">
-      <select id="mood">
-        <option value="random">Mood: Random</option>
-        <option value="absurd">Absurd</option>
-        <option value="filosofis">Filosofis</option>
-        <option value="gelap">Lucu Gelap</option>
-        <option value="serius">Serius</option>
-      </select>
-      <select id="topic">
-        <option value="random">Topik: Random</option>
-        <option value="waktu">Waktu</option>
-        <option value="identitas">Identitas</option>
-        <option value="teknologi">Teknologi</option>
-        <option value="mimpi">Mimpi</option>
-        <option value="binatang">Binatang</option>
-      </select>
-      <select id="lang">
-        <option value="id">🇮🇩 Bahasa</option>
-        <option value="en">🇬🇧 Language</option>
-      </select>
-      <button onclick="generatePrompt()">🎲 Generate Prompt</button>
-      <button onclick="copyToClipboard()">📋 Copy</button>
-      <button onclick="openChatGPT()">🤖 ChatGPT</button>
-    </div>
-    <div class="output" id="output">Prompt akan muncul di sini...</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generator Absurditas</title>
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #00ff88;
+    }
+    button {
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: #222;
+      color: white;
+      transition: background-color 0.3s ease;
+      margin: 0.3rem;
+    }
+    button:hover {
+      background-color: #444;
+    }
+    #output {
+      margin-top: 2rem;
+      font-size: 1.2rem;
+      color: #fff;
+      transition: opacity 0.4s ease;
+    }
+    .fade {
+      opacity: 0;
+    }
+    .filter-group {
+      margin: 1rem auto;
+      text-align: center;
+    }
+    label {
+      font-weight: bold;
+      color: #00ff88;
+    }
+    .checkbox-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Generator Prompt Absurditas</h1>
 
-    <script>
-      let promptDB = {};
+  <div class="filter-group">
+    <label>Mood:</label>
+    <div id="moodCheckboxes" class="checkbox-container"></div>
 
-      fetch("assets/json/absurditas.json")
-        .then((response) => response.json())
-        .then((data) => (promptDB = data))
-        .catch((err) => {
-          console.error("Gagal memuat prompts.json:", err);
-          document.getElementById("output").textContent =
-            "⚠️ Gagal memuat data prompt.";
-        });
+    <label>Topik:</label>
+    <div id="topicCheckboxes" class="checkbox-container"></div>
+  </div>
 
-      function generatePrompt() {
-        const lang = document.getElementById("lang").value;
-        const mood = document.getElementById("mood").value;
-        const topic = document.getElementById("topic").value;
+  <button onclick="generatePrompt()">🎲 Acak Prompt</button>
+  <button onclick="shareToChatGPT()">🔗 Buka di ChatGPT</button>
+  <div id="output"></div>
 
-        const list = promptDB[lang] || [];
-        const filtered = list.filter(
-          (p) =>
-            (mood === "random" || p.mood === mood) &&
-            (topic === "random" || p.topic === topic)
-        );
+  <script>
+    let prompts = [];
+    let currentPrompt = null;
 
-        const prompt = filtered.length
-          ? filtered[Math.floor(Math.random() * filtered.length)].text
-          : "Tidak ada prompt yang cocok dengan filter.";
+    async function loadPrompts() {
+      const res = await fetch('assets/json/absurditas.json');
+      prompts = await res.json();
 
-        const outputEl = document.getElementById("output");
-        outputEl.classList.remove("show");
-        void outputEl.offsetWidth; // trigger reflow
-        outputEl.textContent = prompt;
-        outputEl.classList.add("show");
+      const moods = new Set();
+      const topics = new Set();
+      prompts.forEach(p => {
+        p.mood.forEach(m => moods.add(m));
+        p.topic.forEach(t => topics.add(t));
+      });
+
+      const moodBox = document.getElementById('moodCheckboxes');
+      moods.forEach(mood => {
+        const cb = document.createElement('label');
+        cb.innerHTML = `<input type="checkbox" value="${mood}" /> ${mood}`;
+        moodBox.appendChild(cb);
+      });
+
+      const topicBox = document.getElementById('topicCheckboxes');
+      topics.forEach(topic => {
+        const cb = document.createElement('label');
+        cb.innerHTML = `<input type="checkbox" value="${topic}" /> ${topic}`;
+        topicBox.appendChild(cb);
+      });
+    }
+
+    function getCheckedValues(containerId) {
+      return Array.from(document.querySelectorAll(`#${containerId} input:checked`)).map(cb => cb.value);
+    }
+
+    function generatePrompt() {
+      const selectedMoods = getCheckedValues('moodCheckboxes');
+      const selectedTopics = getCheckedValues('topicCheckboxes');
+
+      const filtered = prompts.filter(p => {
+        const moodMatch = selectedMoods.length === 0 || selectedMoods.some(m => p.mood.includes(m));
+        const topicMatch = selectedTopics.length === 0 || selectedTopics.some(t => p.topic.includes(t));
+        return moodMatch && topicMatch;
+      });
+
+      if (filtered.length === 0) {
+        document.getElementById('output').innerHTML = '🚫 Tidak ada hasil.';
+        return;
       }
 
-      function copyToClipboard() {
-        const text = document.getElementById("output").textContent;
-        navigator.clipboard
-          .writeText(text)
-          .then(() => alert("✅ Prompt disalin!"));
-      }
+      const i = Math.floor(Math.random() * filtered.length);
+      currentPrompt = filtered[i];
+      const out = document.getElementById('output');
+      out.classList.add('fade');
+      setTimeout(() => {
+        out.innerHTML = `🧠 <b>${currentPrompt.question}</b><br><small>[Mood: ${currentPrompt.mood.join(', ')} | Topik: ${currentPrompt.topic.join(', ')}]</small>`;
+        out.classList.remove('fade');
+      }, 300);
+    }
 
-      function openChatGPT() {
-        const text = document.getElementById("output").textContent;
-        const url = `https://chat.openai.com/?prompt=${encodeURIComponent(
-          text
-        )}`;
-        window.open(url, "_blank");
-      }
-    </script>
-  </body>
+    function shareToChatGPT() {
+      if (!currentPrompt) return;
+      const url = `https://chat.openai.com/?prompt=${encodeURIComponent(currentPrompt.question)}`;
+      window.open(url, '_blank');
+    }
+
+    loadPrompts();
+  </script>
+</body>
 </html>
