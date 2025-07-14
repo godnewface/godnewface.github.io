@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Statistik Generator</title>
+
+    <script src="https://unpkg.com/simple-statistics@7.7.2/dist/simple-statistics.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div style="max-width: 80%; margin: 0 auto;">
+      <h1 style="text-align: center;">Generator Uji Statistik</h1>
+
+      <div
+                  style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 20px;
+                  "
+                >
+                  <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                    <a class="a2a_dd" href="https://www.addtoany.com/share"></a
+                    ><a class="a2a_button_facebook"></a
+                    ><a class="a2a_button_whatsapp"></a
+                    ><a class="a2a_button_google_gmail"></a
+                    ><a class="a2a_button_x"></a>
+                  </div>
+                  <script
+                    defer
+                    src="https://static.addtoany.com/menu/page.js"
+                  ></script>
+                </div>
+  <script defer src="https://static.addtoany.com/menu/page.js"></script>
+  <!-- AddToAny END -->
+
+      <details style="margin-bottom: 1rem;">
+        <summary><strong>📘 Panduan Penggunaan Uji Statistik</strong></summary>
+        <div style="padding: 0.5rem 1rem;">
+          <p><strong>1. Uji-t Berpasangan:</strong> Digunakan jika data berasal dari kelompok yang sama (sebelum-sesudah). Data 1 dan Data 2 harus punya jumlah yang sama.</p>
+          <p><strong>2. Uji-t Independen:</strong> Untuk membandingkan dua kelompok berbeda. Panjang data bisa berbeda.</p>
+          <p><strong>3. Korelasi Pearson:</strong> Mengukur hubungan linear antara dua variabel. Data harus berukuran sama.</p>
+          <p><strong>4. Mann-Whitney U:</strong> Uji non-parametrik untuk dua kelompok berbeda. Cocok jika data tidak normal.</p>
+          <p><strong>5. Chi-Square:</strong> Masukkan tabel kontingensi (baris = kategori, kolom = frekuensi per kategori). Contoh:</p>
+          <pre>60 40
+40 60
+20 30</pre>
+          <p><em>Masukkan tanpa label (seperti 'Pria', 'Wanita', dsb).</em></p>
+        </div>
+      </details>
+      <h2>📁 Upload CSV</h2>
+      <input type="file" id="csvFile" accept=".csv" />
+
+      <div id="columnSelector" style="display: none">
+        <label>Pilih kolom untuk Data 1:</label>
+        <select id="col1Select"></select>
+        <label>Pilih kolom untuk Data 2:</label>
+        <select id="col2Select"></select>
+        <button onclick="useSelectedColumns()">Gunakan Kolom Ini</button>
+      </div>
+
+      <label for="uji">Pilih Jenis Uji Statistik:</label>
+      <select id="uji">
+        <option value="paired">Uji-t Berpasangan</option>
+        <option value="independent">Uji-t Independen</option>
+        <option value="correlation">Korelasi Pearson</option>
+        <option value="mannwhitney">Mann-Whitney U</option>
+        <option value="chisquare">Chi-Square</option>
+      </select>
+
+      <label>Data 1 (pisahkan dengan koma):</label>
+      <textarea id="data1" rows="3"></textarea>
+
+      <label>Data 2 (pisahkan dengan koma):</label>
+      <textarea id="data2" rows="3"></textarea>
+
+      <button onclick="runTest()">Proses Uji Statistik</button>
+
+      <div class="output" id="summaryBox"></div>
+      <div class="output" id="resultBox"></div>
+
+      <div id="exportButtons" style="margin-top: 10px; display: none">
+        <button onclick="exportAsTXT()">💾 Download TXT</button>
+        <button onclick="exportAsPDF()">📄 Download PDF</button>
+      </div>
+
+    </div>
+  </body>
+</html>

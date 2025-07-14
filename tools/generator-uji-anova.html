@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uji ANOVA - Input & Visualisasi</title>
+    <script src="https://cdn.jsdelivr.net/npm/jstat@latest/dist/jstat.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 20px;
+        background-color: #121212;
+        color: #ffffff;
+      }
+      textarea,
+      input[type="file"] {
+        width: 100%;
+        margin-bottom: 1em;
+        padding: 0.5em;
+        background: #1e1e1e;
+        border: 1px solid #444;
+        color: #fff;
+      }
+      button {
+        padding: 0.5em 1em;
+        background: #2e7d32;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-right: 0.5em;
+      }
+      button:hover {
+        background: #388e3c;
+      }
+      pre {
+        background: #1e1e1e;
+        padding: 1em;
+        border: 1px solid #444;
+        overflow-x: auto;
+      }
+      canvas {
+        background: #ffffff;
+        border: 1px solid #444;
+        padding: 1em;
+        max-width: 100%;
+      }
+      @media (max-width: 600px) {
+        body {
+          padding: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center">Uji ANOVA</h2>
+    <p>
+      Masukkan data per baris dalam format:
+      <code>NamaGrup: nilai1, nilai2, nilai3</code>
+    </p>
+    <textarea id="data-input" rows="6">
+A: 51,87,50,48,79,61,53
+B: 82,91,92,80,52,79,73,74
+C: 79,84,74,98,63,83,85,58
+D: 85,80,65,71,67,51</textarea
+    >
+
+    <input type="file" id="csv-file" accept=".csv" />
+    <button onclick="runANOVA()">Hitung ANOVA</button>
+    <button onclick="saveAsImage()">Simpan Grafik</button>
+    <button onclick="exportToPDF()">Export ke PDF</button>
+    <button onclick="downloadResult()">Simpan Hasil</button>
+
+    <pre id="anova-output"></pre>
+    <canvas id="chart" width="400" height="200"></canvas>
+
+    <script>
+      let lastOutput = "";
+
+      function parseInput(text) {
+        const lines = text.trim().split(/\n|\r/);
+        const groups = [];
+        const labels = [];
+        for (let line of lines) {
+          const [label, values] = line.split(":");
+          if (!values) continue;
+          const numbers = values
+            .split(",")
+            .map((v) => parseFloat(v.trim()))
+            .filter((n) => !isNaN(n));
+          if (numbers.length) {
+            groups.push(numbers);
+            labels.push(label.trim());
+          }
+        }
+        return { groups, labels };
+      }
+
+      function oneWayANOVA(groups) {
+        const k = groups.length;
+        const allValues = groups.flat();
+        const N = allValues.length;
+        const grandMean = allValues.reduce((a, b) => a + b, 0) / N;
+
+        let ssBetween = 0;
+        let ssWithin = 0;
+
+        for (const group of groups) {
+          const mean = group.reduce((a, b) => a + b, 0) / group.length;
+          ssBetween += group.length * Math.pow(mean - grandMean, 2);
+          ssWithin += group.reduce(
+            (sum, val) => sum + Math.pow(val - mean, 2),
+            0
+          );
+        }
+
+        const dfBetween = k - 1;
+        const dfWithin = N - k;
+        const msBetween = ssBetween / dfBetween;
+        const msWithin = ssWithin / dfWithin;
+        const F = msBetween / msWithin;
+        const p = 1 - jStat.centralF.cdf(F, dfBetween, dfWithin);
+
+        return { F, dfBetween, dfWithin, p };
+      }
+
+      function runANOVA() {
+        const text = document.getElementById("data-input").value;
+        const { groups, labels } = parseInput(text);
+        if (!groups || groups.length < 2) {
+          alert("Masukkan minimal 2 grup");
+          return;
+        }
+
+        const result = oneWayANOVA(groups);
+        const output = `Uji ANOVA\n------------------------\nF = ${result.F.toFixed(
+          4
+        )}, df = ${result.dfBetween}, ${
+          result.dfWithin
+        }\np-value = ${result.p.toFixed(4)}\n${
+          result.p < 0.05 ? "✅ Signifikan" : "⚠️ Tidak signifikan"
+        }\n`;
+        lastOutput = output;
+        document.getElementById("anova-output").textContent = output;
+        drawScatter(groups, labels);
+      }
+
+      function drawScatter(groups, labels) {
+        const ctx = document.getElementById("chart").getContext("2d");
+        const dataPoints = [];
+        groups.forEach((group, groupIndex) => {
+          group.forEach((value) => {
+            const jitter = (Math.random() - 0.5) * 0.3;
+            dataPoints.push({
+              x: groupIndex + 1 + jitter,
+              y: value,
+              label: labels[groupIndex],
+              backgroundColor: `hsl(${groupIndex * 60}, 70%, 60%)`,
+            });
+          });
+        });
+
+        if (window.anovaChart) window.anovaChart.destroy();
+        window.anovaChart = new Chart(ctx, {
+          type: "scatter",
+          data: {
+            datasets: [
+              {
+                label: "Data ANOVA",
+                data: dataPoints.map((pt) => ({ x: pt.x, y: pt.y })),
+                backgroundColor: dataPoints.map((pt) => pt.backgroundColor),
+              },
+            ],
+          },
+          options: {
+            responsive: true,
+            scales: {
+              x: {
+                type: "linear",
+                position: "bottom",
+                min: 0.5,
+                max: groups.length + 0.5,
+                ticks: {
+                  stepSize: 1,
+                  callback: function (value) {
+                    return labels[Math.round(value) - 1] || value;
+                  },
+                },
+                title: { display: true, text: "Grup" },
+              },
+              y: {
+                beginAtZero: true,
+                title: { display: true, text: "Nilai" },
+              },
+            },
+            plugins: {
+              legend: { display: false },
+              tooltip: {
+                callbacks: {
+                  label: function (context) {
+                    const x = context.parsed.x;
+                    const y = context.parsed.y;
+                    const label = labels[Math.round(x) - 1] || `Grup ${x}`;
+                    return `${label}: ${y}`;
+                  },
+                },
+              },
+            },
+          },
+        });
+      }
+
+      function saveAsImage() {
+        const link = document.createElement("a");
+        link.download = "anova_chart.png";
+        link.href = document.getElementById("chart").toDataURL();
+        link.click();
+      }
+
+      function exportToPDF() {
+        const { jsPDF } = window.jspdf;
+        const doc = new jsPDF();
+        doc.text("Hasil Uji ANOVA", 10, 10);
+        doc.setFontSize(10);
+        const lines = lastOutput.split("\n");
+        lines.forEach((line, i) => {
+          doc.text(line, 10, 20 + i * 6);
+        });
+
+        const chartCanvas = document.getElementById("chart");
+        const imgData = chartCanvas.toDataURL("image/png");
+        doc.addImage(imgData, "PNG", 10, 50, 180, 90);
+        doc.save("anova_result.pdf");
+      }
+
+      function downloadResult() {
+        const blob = new Blob([lastOutput], { type: "text/plain" });
+        const link = document.createElement("a");
+        link.href = URL.createObjectURL(blob);
+        link.download = "hasil_uji_anova.txt";
+        link.click();
+      }
+
+      document
+        .getElementById("csv-file")
+        .addEventListener("change", function (e) {
+          const file = e.target.files[0];
+          if (!file) return;
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            document.getElementById("data-input").value = e.target.result;
+          };
+          reader.readAsText(file);
+        });
+    </script>
+  </body>
+</html>
