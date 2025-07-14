@@ -364,6 +364,8 @@ range = ${range}`;
   else if (type === "correlation") res = pearsonCorrelation(d1, d2);
   else if (type === "mannwhitney") res = mannWhitneyTest(d1, d2);
   else if (type === "chisquare") res = chiSquareTest();
+  else if (type === "spearman") res = spearmanCorrelation(d1, d2);
+  else if (type === "regression") res = simpleLinearRegression(d1, d2);
 
   summary.innerText =
     summarize(d1, "Data 1") + "\n\n" + summarize(d2, "Data 2");
