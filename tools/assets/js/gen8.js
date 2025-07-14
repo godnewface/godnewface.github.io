@@ -2,8 +2,8 @@
 
 // Global variables
 let chartInstance = null;
-if (typeof ChartDataLabels !== 'undefined') {
-  }
+if (typeof ChartDataLabels !== "undefined") {
+}
 let __csvData = [];
 
 // ===============================
@@ -16,10 +16,12 @@ document.getElementById("csvFile").addEventListener("change", (e) => {
     header: true,
     dynamicTyping: true,
     complete(r) {
-      __csvData = r.data.filter(row => Object.values(row).some(val => val !== null && val !== ''));
+      __csvData = r.data.filter((row) =>
+        Object.values(row).some((val) => val !== null && val !== "")
+      );
       const keys = Object.keys(r.data[0]);
       const c1 = document.getElementById("col1Select"),
-            c2 = document.getElementById("col2Select");
+        c2 = document.getElementById("col2Select");
       c1.innerHTML = "";
       c2.innerHTML = "";
       keys.forEach((k) => {
@@ -30,7 +32,7 @@ document.getElementById("csvFile").addEventListener("change", (e) => {
     },
     error(err) {
       alert("Gagal membaca file CSV: " + err.message);
-    }
+    },
   });
 });
 
@@ -43,13 +45,12 @@ function useSelectedColumns() {
   document.getElementById("data2").value = v2.join(",");
 }
 
-
 // ===============================
 // Fungsi Tambahan: tInv (inverse distribusi t)
 function tInv(p, df) {
   // Approximation using inverse beta distribution
   const x = betaIncInv(2 * Math.min(p, 1 - p), df / 2, 0.5);
-  const t = Math.sqrt(df * (1 - x) / x);
+  const t = Math.sqrt((df * (1 - x)) / x);
   return p > 0.5 ? t : -t;
 }
 
@@ -116,8 +117,11 @@ function betaInc(x, a, b) {
   if (x <= 0) return 0;
   if (x >= 1) return 1;
   const bt = Math.exp(
-    gammaLn(a + b) - gammaLn(a) - gammaLn(b) +
-    a * Math.log(x) + b * Math.log(1 - x)
+    gammaLn(a + b) -
+      gammaLn(a) -
+      gammaLn(b) +
+      a * Math.log(x) +
+      b * Math.log(1 - x)
   );
   if (x < (a + 1) / (a + b + 2)) return (bt * betacf(x, a, b)) / a;
   else return 1 - (bt * betacf(1 - x, b, a)) / b;
@@ -163,21 +167,35 @@ function pairedTTest(d1, d2) {
   const df = n - 1;
   const p = 2 * (1 - tDistCDF(Math.abs(t), df));
   return {
-    text: `Uji-t Berpasangan\n------------------------\nn=${n}, df=${df}\nmean diff=${meanDiff.toFixed(4)}\nt=${t.toFixed(4)}\np=${p.toFixed(4)}\n${p < 0.05 ? "✅ Signifikan" : "⚠️ Tidak signifikan"}`,
+    text: `Uji-t Berpasangan\n------------------------\nn=${n}, df=${df}\nmean diff=${meanDiff.toFixed(
+      4
+    )}\nt=${t.toFixed(4)}\np=${p.toFixed(4)}\n${
+      p < 0.05 ? "✅ Signifikan" : "⚠️ Tidak signifikan"
+    }`,
     p,
   };
 }
 function independentTTest(d1, d2) {
-  const n1 = d1.length, n2 = d2.length;
-  const m1 = ss.mean(d1), m2 = ss.mean(d2);
-  const v1 = ss.variance(d1), v2 = ss.variance(d2);
+  const n1 = d1.length,
+    n2 = d2.length;
+  const m1 = ss.mean(d1),
+    m2 = ss.mean(d2);
+  const v1 = ss.variance(d1),
+    v2 = ss.variance(d2);
   const se = Math.sqrt(v1 / n1 + v2 / n2);
   const t = (m1 - m2) / se;
-  const df = Math.pow(v1 / n1 + v2 / n2, 2) /
+  const df =
+    Math.pow(v1 / n1 + v2 / n2, 2) /
     (Math.pow(v1 / n1, 2) / (n1 - 1) + Math.pow(v2 / n2, 2) / (n2 - 1));
   const p = 2 * (1 - tDistCDF(Math.abs(t), Math.floor(df)));
   return {
-    text: `Uji-t Independen\n------------------------\nn1=${n1}, mean1=${m1.toFixed(2)}, n2=${n2}, mean2=${m2.toFixed(2)}\ndf=${Math.floor(df)}, t=${t.toFixed(4)}\np=${p.toFixed(4)}\n${p < 0.05 ? "✅ Signifikan" : "⚠️ Tidak signifikan"}`,
+    text: `Uji-t Independen\n------------------------\nn1=${n1}, mean1=${m1.toFixed(
+      2
+    )}, n2=${n2}, mean2=${m2.toFixed(2)}\ndf=${Math.floor(df)}, t=${t.toFixed(
+      4
+    )}\np=${p.toFixed(4)}\n${
+      p < 0.05 ? "✅ Signifikan" : "⚠️ Tidak signifikan"
+    }`,
     p,
   };
 }
@@ -187,15 +205,21 @@ function pearsonCorrelation(d1, d2) {
   const t = r * Math.sqrt((n - 2) / (1 - r * r));
   const p = 2 * (1 - tDistCDF(Math.abs(t), n - 2));
   return {
-    text: `Korelasi Pearson\n------------------------\nr=${r.toFixed(4)}\nt=${t.toFixed(4)}, df=${n - 2}\np=${p.toFixed(4)}\n${p < 0.05 ? "✅ Signifikan" : "⚠️ Tidak signifikan"}`,
+    text: `Korelasi Pearson\n------------------------\nr=${r.toFixed(
+      4
+    )}\nt=${t.toFixed(4)}, df=${n - 2}\np=${p.toFixed(4)}\n${
+      p < 0.05 ? "✅ Signifikan" : "⚠️ Tidak signifikan"
+    }`,
     p,
   };
 }
 function mannWhitneyTest(d1, d2) {
-  const combined = [...d1.map((v) => [v, "A"]), ...d2.map((v) => [v, "B"])]
-    .sort((a, b) => a[0] - b[0]);
+  const combined = [
+    ...d1.map((v) => [v, "A"]),
+    ...d2.map((v) => [v, "B"]),
+  ].sort((a, b) => a[0] - b[0]);
   let ranks = [];
-  for (let i = 0; i < combined.length;) {
+  for (let i = 0; i < combined.length; ) {
     const val = combined[i][0];
     const same = combined.filter((x) => x[0] === val);
     const avg = (2 * i + same.length + 1) / 2;
@@ -203,7 +227,8 @@ function mannWhitneyTest(d1, d2) {
     i += same.length;
   }
   const R1 = ranks.filter((r) => r[0] === "A").reduce((s, x) => s + x[1], 0);
-  const n1 = d1.length, n2 = d2.length;
+  const n1 = d1.length,
+    n2 = d2.length;
   const U = Math.min(
     n1 * n2 + (n1 * (n1 + 1)) / 2 - R1,
     n1 * n2 - (n1 * n2 + (n1 * (n1 + 1)) / 2 - R1)
@@ -213,14 +238,23 @@ function mannWhitneyTest(d1, d2) {
   const z = (U - mu) / sigma;
   const p = 2 * (1 - zCDF(Math.abs(z)));
   return {
-    text: `Mann-Whitney U\n------------------------\nU=${U.toFixed(4)}, z=${z.toFixed(4)}\np≈${p.toFixed(4)}\n${p < 0.05 ? "✅ Signifikan" : "⚠️ Tidak signifikan"}`,
+    text: `Mann-Whitney U\n------------------------\nU=${U.toFixed(
+      4
+    )}, z=${z.toFixed(4)}\np≈${p.toFixed(4)}\n${
+      p < 0.05 ? "✅ Signifikan" : "⚠️ Tidak signifikan"
+    }`,
     p,
   };
 }
 function chiSquareTest() {
-  const raw = prompt("Masukkan tabel kontingensi (baris ENTER, kolom spasi):\nContoh:\n10 20\n15 25");
+  const raw = prompt(
+    "Masukkan tabel kontingensi (baris ENTER, kolom spasi):\nContoh:\n10 20\n15 25"
+  );
   if (!raw) return null;
-  const rows = raw.trim().split("\n").map((r) => r.trim().split(/\s+/).map(Number));
+  const rows = raw
+    .trim()
+    .split("\n")
+    .map((r) => r.trim().split(/\s+/).map(Number));
   const rowSums = rows.map((r) => r.reduce((a, b) => a + b, 0));
   const colSums = rows[0].map((_, j) => rows.reduce((s, r) => s + r[j], 0));
   const total = rowSums.reduce((a, b) => a + b, 0);
@@ -234,8 +268,63 @@ function chiSquareTest() {
   const df = (rows.length - 1) * (rows[0].length - 1);
   const p = 1 - fDistCDF(chi2, 1, df); // approx
   return {
-    text: `Chi-Square\n------------------------\nχ²=${chi2.toFixed(4)}, df=${df}\np=${p.toFixed(4)}\n${p < 0.05 ? "✅ Signifikan" : "⚠️ Tidak signifikan"}`,
+    text: `Chi-Square\n------------------------\nχ²=${chi2.toFixed(
+      4
+    )}, df=${df}\np=${p.toFixed(4)}\n${
+      p < 0.05 ? "✅ Signifikan" : "⚠️ Tidak signifikan"
+    }`,
     p,
+  };
+}
+function spearmanCorrelation(d1, d2) {
+  function rank(arr) {
+    const sorted = arr
+      .slice()
+      .map((v, i) => [v, i])
+      .sort((a, b) => a[0] - b[0]);
+    const ranks = Array(arr.length);
+    let i = 0;
+    while (i < sorted.length) {
+      const start = i;
+      while (i + 1 < sorted.length && sorted[i][0] === sorted[i + 1][0]) i++;
+      const avgRank = (start + i + 2) / 2;
+      for (let j = start; j <= i; j++) ranks[sorted[j][1]] = avgRank;
+      i++;
+    }
+    return ranks;
+  }
+  const rx = rank(d1);
+  const ry = rank(d2);
+  const r = ss.sampleCorrelation(rx, ry);
+  const n = d1.length;
+  const t = r * Math.sqrt((n - 2) / (1 - r * r));
+  const p = 2 * (1 - tDistCDF(Math.abs(t), n - 2));
+  return {
+    text: `Korelasi Spearman\n------------------------\nr_s=${r.toFixed(
+      4
+    )}\nt=${t.toFixed(4)}, df=${n - 2}\np=${p.toFixed(4)}\n${
+      p < 0.05 ? "✅ Signifikan" : "⚠️ Tidak signifikan"
+    }`,
+    p,
+  };
+}
+
+function simpleLinearRegression(d1, d2) {
+  const n = d1.length;
+  const result = ss.linearRegressionLine(
+    ss.linearRegression(d1.map((x, i) => [x, d2[i]]))
+  );
+  const slope = ss.linearRegression(d1.map((x, i) => [x, d2[i]])).m;
+  const intercept = ss.linearRegression(d1.map((x, i) => [x, d2[i]])).b;
+  const predicted = d1.map(result);
+  const r2 = ss.rSquared(d2, predicted);
+  return {
+    text: `Regresi Linear Sederhana\n------------------------\nY = ${slope.toFixed(
+      4
+    )}X + ${intercept.toFixed(4)}\nR² = ${r2.toFixed(4)}\n${
+      r2 > 0.5 ? "✅ Hubungan kuat" : "⚠️ Hubungan lemah"
+    }`,
+    p: r2,
   };
 }
 // ===============================
@@ -276,22 +365,18 @@ range = ${range}`;
   else if (type === "mannwhitney") res = mannWhitneyTest(d1, d2);
   else if (type === "chisquare") res = chiSquareTest();
 
-  summary.innerText = summarize(d1, "Data 1") + "\n\n" + summarize(d2, "Data 2");
+  summary.innerText =
+    summarize(d1, "Data 1") + "\n\n" + summarize(d2, "Data 2");
   out.innerText = res?.text || "Gagal menjalankan uji.";
 
   // Tambahkan interpretasi p-value
   if (res?.p !== undefined) {
-  
-}
+  }
   document.getElementById("exportButtons").style.display = "block";
 }
-
-
 
 // pastikan fungsi ini berada di global scope
 document.getElementById("exportButtons").style.display = "block";
 
-
 // pastikan fungsi ini berada di global scope
 window.runTest = runTest;
-
