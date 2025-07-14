@@ -180,19 +180,3 @@
     });
 
 })(jQuery);
-
- // Tampilkan tombol saat scroll ke bawah
- const backToTopBtn = document.getElementById("backToTop");
-
- window.onscroll = function () {
-   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-     backToTopBtn.style.display = "flex";
-   } else {
-     backToTopBtn.style.display = "none";
-   }
- };
-
- // Scroll ke atas saat tombol diklik
- backToTopBtn.addEventListener("click", function () {
-   window.scrollTo({ top: 0, behavior: 'smooth' });
- });
