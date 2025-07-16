@@ -1,172 +1,79 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>godnewface | Music</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
-      defer
-    ></script>
-  </head>
-  <body class="font-sans bg-white text-gray-800">
-    <!-- Header -->
-    <header class="bg-black text-white">
-      <div
-        class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center"
-      >
-        <a href="/"
-          ><img src="img/logo.png" alt="godnewface_logo" class="h-10"
-        /></a>
-        <nav class="hidden md:flex space-x-4">
-          <a href="/" class="hover:text-gray-400">Home</a>
-          <a href="#aku" class="hover:text-gray-400">Aku</a>
-          <a href="/music.html" class="text-yellow-400 font-bold">Music</a>
-          <a href="/code.html" class="hover:text-gray-400">Code</a>
-          <a href="/contact.html" class="hover:text-gray-400">Contact</a>
-        </nav>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>godnewface | Music</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</head>
+<body class="font-sans bg-white text-gray-800">
+  <header class="bg-black text-white">
+    <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
+      <a href="/"><img src="img/logo.png" alt="logo" class="h-10" /></a>
+      <nav class="hidden md:flex space-x-4">
+        <a href="/" class="hover:text-gray-400">Home</a>
+        <a href="#aku" class="hover:text-gray-400">Aku</a>
+        <a href="/music.html" class="text-yellow-400 font-bold">Music</a>
+        <a href="/code.html" class="hover:text-gray-400">Code</a>
+        <a href="/contact.html" class="hover:text-gray-400">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <section
-      class="relative bg-cover bg-center py-24 text-white text-center"
-      style="background-image: url('img/breadcrumb-bg.jpg')"
-    >
-      <h1 class="text-4xl font-bold mb-4">godnewface Music</h1>
-      <div class="flex justify-center gap-4 mb-4">
-        <a href="#" class="hover:text-yellow-400"
-          ><i class="fa fa-instagram"></i
-        ></a>
-        <a href="#" class="hover:text-yellow-400"
-          ><i class="fa fa-youtube-play"></i
-        ></a>
-      </div>
-      <div>
-        <a href="/" class="text-yellow-300 hover:underline">Home</a> &raquo;
-        <span>About</span>
-      </div>
-    </section>
+  <section class="text-center py-24 bg-cover bg-center text-white" style="background-image: url('img/breadcrumb-bg.jpg')">
+    <h1 class="text-4xl font-bold mb-4">godnewface Music</h1>
+    <p><a href="/" class="text-yellow-300 hover:underline">Home</a> &raquo; About</p>
+  </section>
 
-    <!-- Filter & Gallery -->
-    <section class="max-w-7xl mx-auto py-12 px-4">
-      <div class="flex justify-center gap-4 mb-10 flex-wrap">
-        <button
-          data-filter="*"
-          class="bg-black text-white px-4 py-2 rounded active"
-        >
-          All
-        </button>
-        <button
-          data-filter="metal"
-          class="bg-black text-white px-4 py-2 rounded"
-        >
-          Metal
-        </button>
-        <button
-          data-filter="punk"
-          class="bg-black text-white px-4 py-2 rounded"
-        >
-          Punk
-        </button>
-        <button
-          data-filter="reggae"
-          class="bg-black text-white px-4 py-2 rounded"
-        >
-          Reggae
-        </button>
-        <button
-          data-filter="k-pop"
-          class="bg-black text-white px-4 py-2 rounded"
-        >
-          K-Pop
-        </button>
-      </div>
-      <div
-        class="portfolio__gallery grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
-      >
-        <!-- Gallery content will be injected via JS -->
-      </div>
-    </section>
+  <section class="max-w-7xl mx-auto py-12 px-4">
+    <div class="portfolio__gallery grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"></div>
+  </section>
 
-    <!-- Modal -->
-    <div
-      x-data="{ open: false, title: '', src: '' }"
-      x-ref="modal"
-      @keydown.window.escape="open = false"
-    >
-      <div
-        x-show="open"
-        x-transition.opacity
-        class="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
-      >
-        <div
-          class="bg-white w-full max-w-4xl rounded-lg overflow-hidden shadow-lg"
-        >
-          <div class="flex justify-between items-center p-4 border-b">
-            <h2 class="text-lg font-semibold" x-text="title"></h2>
-            <button
-              @click="open = false"
-              class="text-gray-600 hover:text-black text-2xl"
-            >
-              &times;
-            </button>
-          </div>
-          <div class="aspect-video">
-            <iframe
-              class="w-full h-full"
-              :src="src"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
-          </div>
+  <div x-data="modalHandler()" x-init="init()" x-ref="modal" @keydown.window.escape="open = false">
+    <div x-show="open" x-transition.opacity class="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
+      <div class="bg-white w-full max-w-4xl rounded-lg overflow-hidden shadow-lg">
+        <div class="flex justify-between items-center p-4 border-b">
+          <h2 class="text-lg font-semibold" x-text="title"></h2>
+          <button @click="open = false" class="text-gray-600 hover:text-black text-2xl">&times;</button>
+        </div>
+        <div class="aspect-video">
+          <iframe class="w-full h-full" :src="src" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-100 py-12">
-      <div class="text-center text-sm mt-12">
-        &copy;
-        <script>
-          document.write(new Date().getFullYear());
-        </script>
-        godnewface. All rights reserved.
-      </div>
-    </footer>
-
-    <!-- Gallery Loader Script -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        fetch("music/music-data.json")
-          .then((res) => res.json())
-          .then((data) => {
-            const gallery = document.querySelector(".portfolio__gallery");
-            const modalRoot = document.querySelector("[x-ref='modal']");
-
-            data.forEach((music) => {
-              const item = document.createElement("div");
-              item.className =
-                "bg-white rounded shadow hover:shadow-lg transition p-4 cursor-pointer";
-              item.innerHTML = `
-          <div class="h-48 bg-cover bg-center rounded mb-2" style="background-image:url('${
-            music.thumbnail
-          }')"></div>
-          <h3 class="font-bold text-lg mb-1">${music.title}</h3>
-          <p class="text-sm text-gray-500">#${music.genre} ${music.tags
-                .map((t) => `#${t}`)
-                .join(" ")}</p>
-        `;
-              item.addEventListener("click", () => {
-                modalRoot.__x.$data.open = true;
-                modalRoot.__x.$data.title = music.title;
-                modalRoot.__x.$data.src = music.embedPage;
+  </div>
+  <script>
+    function modalHandler() {
+      return {
+        open: false,
+        title: '',
+        src: '',
+        init() {
+          fetch("music/music-data.json")
+            .then(res => res.json())
+            .then(data => {
+              const gallery = document.querySelector(".portfolio__gallery");
+              data.forEach((music) => {
+                const item = document.createElement("div");
+                item.className = "bg-white rounded shadow hover:shadow-lg transition p-4 cursor-pointer";
+                item.innerHTML = `
+                  <div class="h-48 bg-cover bg-center rounded mb-2" style="background-image:url('${music.thumbnail}')"></div>
+                  <h3 class="font-bold text-lg mb-1">${music.title}</h3>
+                  <p class="text-sm text-gray-500">#${music.genre} ${music.tags.map(t => `#${t}`).join(' ')}</p>
+                `;
+                item.addEventListener("click", () => {
+                  this.open = true;
+                  this.title = music.title;
+                  this.src = music.embedPage;
+                });
+                gallery.appendChild(item);
               });
-              gallery.appendChild(item);
             });
-          });
-      });
-    </script>
-  </body>
+        }
+      }
+    }
+  </script>
+</body>
 </html>
