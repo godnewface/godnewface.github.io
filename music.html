@@ -50,7 +50,7 @@
   </section>
 
   <!-- Modal -->
-  <div x-data="{ open: false, title: '', src: '' }" @keydown.window.escape="open = false">
+  <div x-data="{ open: false, title: '', src: '' }" x-ref="modal" @keydown.window.escape="open = false">
     <div x-show="open" x-transition.opacity class="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
       <div class="bg-white w-full max-w-4xl rounded-lg overflow-hidden shadow-lg">
         <div class="flex justify-between items-center p-4 border-b">
