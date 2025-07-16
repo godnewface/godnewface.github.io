@@ -239,56 +239,66 @@
       <iframe id="musicFrame" src=""></iframe>
     </div>
   </div>
-
+  
   <script>
-    fetch("music/music-data.json")
-      .then((res) => res.json())
-      .then((data) => {
-        const gallery = document.querySelector(".portfolio__gallery");
-        const modalsContainer = document.createElement("div");
-  
-        data.forEach((music, index) => {
-          // Portfolio Item
-          const item = document.createElement("div");
-          item.className = `col-lg-4 col-md-6 col-sm-6 mix ${music.genre} fade-in-up`;
-          item.style.animationDelay = `${index * 100}ms`; // Delay tiap item 0.1s
-  
-          item.innerHTML = `
-            <div class="portfolio__item">
-              <div class="portfolio__item__video set-bg" style="background-image: url('${music.thumbnail}');"></div>
-              <div class="portfolio__item__text">
-                <h4><a href="#" data-bs-toggle="modal" data-bs-target="#${music.modalId}">${music.title}</a></h4>
-                <ul>
-                  <li>#${music.genre}</li>
-                  <li>${music.tags.map(tag => `#${tag}`).join(" ")}</li>
-                </ul>
-              </div>
-            </div>`;
-          gallery.appendChild(item);
-  
-          // Modal
-          const modal = document.createElement("div");
-          modal.className = "modal fade";
-          modal.id = music.modalId;
-          modal.tabIndex = -1;
-          modal.innerHTML = `
-            <div class="modal-dialog modal-xl">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">${music.title}</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+    document.addEventListener("DOMContentLoaded", () => {
+      fetch("music/music-data.json")
+        .then(res => res.json())
+        .then(data => {
+          const gallery = document.querySelector(".portfolio__gallery");
+          const modalsContainer = document.createElement("div");
+
+          data.forEach((music, index) => {
+            const item = document.createElement("div");
+            item.className = `col-lg-4 col-md-6 col-sm-6 mix ${music.genre} fade-in-up`;
+            item.style.animationDelay = `${index * 100}ms`;
+            item.innerHTML = `
+              <div class="portfolio__item">
+                <div class="portfolio__item__video set-bg" style="background-image: url('${music.thumbnail}');"></div>
+                <div class="portfolio__item__text">
+                  <h4><a href="#" data-bs-toggle="modal" data-bs-target="#${music.modalId}">${music.title}</a></h4>
+                  <ul>
+                    <li>#${music.genre}</li>
+                    <li>${music.tags.map(tag => `#${tag}`).join(" ")}</li>
+                  </ul>
                 </div>
-                <div class="modal-body" style="height: 80vh; padding: 0">
-                  <iframe src="${music.embedPage}" width="100%" height="100%" frameborder="0"></iframe>
+              </div>`;
+            gallery.appendChild(item);
+
+            const modal = document.createElement("div");
+            modal.className = "modal fade";
+            modal.id = music.modalId;
+            modal.tabIndex = -1;
+            modal.innerHTML = `
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">${music.title}</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body" style="height: 80vh; padding: 0">
+                    <iframe src="${music.embedPage}" width="100%" height="100%" frameborder="0"></iframe>
+                  </div>
                 </div>
-              </div>
-            </div>`;
-          modalsContainer.appendChild(modal);
+              </div>`;
+            modalsContainer.appendChild(modal);
+          });
+
+          document.body.appendChild(modalsContainer);
+
+          // Aktifkan filter
+          mixitup('.portfolio__gallery', {
+            selectors: {
+              target: '.mix'
+            },
+            animation: {
+              duration: 300
+            }
+          });
         });
-  
-        document.body.appendChild(modalsContainer);
-      });
+    });
   </script>
+  
 </body>
 
 </html>
