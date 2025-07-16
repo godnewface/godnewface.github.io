@@ -126,10 +126,10 @@
         <div class="col-lg-12">
           <ul class="portfolio__filter">
             <li class="active" data-filter="*">All</li>
-            <li data-filter=".metal">Metal</li>
-            <li data-filter=".punk">Punk</li>
-            <li data-filter=".reggae">Reggae</li>
-            <li data-filter=".k-pop">K-Pop</li>
+            <li data-filter="metal">Metal</li>
+            <li data-filter="punk">Punk</li>
+            <li data-filter="reggae">Reggae</li>
+            <li data-filter="k-pop">K-Pop</li>
           </ul>
         </div>
       </div>
@@ -227,7 +227,6 @@
   <script src="js/jquery-3.3.1.min.js"></script>
   <!--<script src="js/bootstrap.min.js"></script>-->
   <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/mixitup.min.js"></script>
   <script src="js/masonry.pkgd.min.js"></script>
   <script src="js/jquery.slicknav.js"></script>
   <script src="js/owl.carousel.min.js"></script>
@@ -239,8 +238,8 @@
       <iframe id="musicFrame" src=""></iframe>
     </div>
   </div>
-  
-  <script>
+
+<script>
     document.addEventListener("DOMContentLoaded", () => {
       fetch("music/music-data.json")
         .then(res => res.json())
@@ -252,6 +251,8 @@
             const item = document.createElement("div");
             item.className = `col-lg-4 col-md-6 col-sm-6 mix ${music.genre} fade-in-up`;
             item.style.animationDelay = `${index * 100}ms`;
+            item.setAttribute("data-genre", music.genre);
+
             item.innerHTML = `
               <div class="portfolio__item">
                 <div class="portfolio__item__video set-bg" style="background-image: url('${music.thumbnail}');"></div>
@@ -286,14 +287,26 @@
 
           document.body.appendChild(modalsContainer);
 
-          // Aktifkan filter
-          mixitup('.portfolio__gallery', {
-            selectors: {
-              target: '.mix'
-            },
-            animation: {
-              duration: 300
-            }
+          // Filter manual pakai vanilla JS
+          const filterButtons = document.querySelectorAll(".portfolio__filter li");
+          const items = document.querySelectorAll(".portfolio__gallery .mix");
+
+          filterButtons.forEach(btn => {
+            btn.addEventListener("click", () => {
+              const filter = btn.dataset.filter;
+
+              filterButtons.forEach(b => b.classList.remove("active"));
+              btn.classList.add("active");
+
+              items.forEach(item => {
+                const itemGenre = item.classList;
+                if (filter === "*" || itemGenre.contains(filter)) {
+                  item.style.display = "block";
+                } else {
+                  item.style.display = "none";
+                }
+              });
+            });
           });
         });
     });
