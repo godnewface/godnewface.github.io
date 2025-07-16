@@ -1,5 +1,21 @@
 [
   {
+    "title": "Liturgi Kegelapan",
+    "genre": "metal",
+    "tags": ["melodic", "deathmetal"],
+    "thumbnail": "img/portfolio/portfolio-1.jpg",
+    "modalId": "liturgi-kegelapan",
+    "embedPage": "music/liturgi-kegelapan.html"
+  },
+  {
+    "title": "Lemparan Terakhir",
+    "genre": "punk",
+    "tags": ["melodicpunk", "punkrock"],
+    "thumbnail": "img/portfolio/portfolio-2.jpg",
+    "modalId": "lemparan-terakhir",
+    "embedPage": "music/lemparan-terakhir.html"
+  },
+  {
     "title": "작은 창 Little Window",
     "genre": "koreanpopballad",
     "tags": [
