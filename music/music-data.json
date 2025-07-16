@@ -1,0 +1,232 @@
+[
+  {
+    "title": "작은 창 Little Window",
+    "genre": "koreanpopballad",
+    "tags": [
+      "brightpop",
+      "melancholic",
+      "hopeful",
+      "joyful"
+    ],
+    "thumbnail": "img/portfolio/portfolio-3.jpg",
+    "modalId": "little-window",
+    "embedPage": "music/little-window.html"
+  },
+  {
+    "title": "Life Means Nothing There",
+    "genre": "metal",
+    "tags": [
+      "deathmetal"
+    ],
+    "thumbnail": "img/portfolio/portfolio-4.jpg",
+    "modalId": "life-means-nothing-there",
+    "embedPage": "music/life-means-nothing-there.html"
+  },
+  {
+    "title": "No God of Gold Shall Bind Me",
+    "genre": "metal",
+    "tags": [
+      "deathmetal"
+    ],
+    "thumbnail": "img/portfolio/portfolio-5.jpg",
+    "modalId": "no-god-of-gold-shall-bind-me",
+    "embedPage": "music/no-god-of-gold-shall-bind-me.html"
+  },
+  {
+    "title": "No Time To Heal",
+    "genre": "punk",
+    "tags": [
+      "melodicpunk",
+      "punkrock"
+    ],
+    "thumbnail": "img/portfolio/portfolio-6.jpg",
+    "modalId": "no-time-to-heal",
+    "embedPage": "music/no-time-to-heal.html"
+  },
+  {
+    "title": "Our Journey",
+    "genre": "k-pop",
+    "tags": [
+      "ballads"
+    ],
+    "thumbnail": "img/portfolio/portfolio-7.jpg",
+    "modalId": "our-journey",
+    "embedPage": "music/our-first-journey.html"
+  },
+  {
+    "title": "Paradise for Sale",
+    "genre": "punk",
+    "tags": [
+      "hardcorepunk",
+      "punkrock"
+    ],
+    "thumbnail": "img/portfolio/portfolio-8.jpg",
+    "modalId": "paradise-for-sale",
+    "embedPage": "music/paradise-for-sale.html"
+  },
+  {
+    "title": "Seragam tanpa Jiwa!",
+    "genre": "punk",
+    "tags": [
+      "punkrock"
+    ],
+    "thumbnail": "img/portfolio/portfolio-9.jpg",
+    "modalId": "seragam-tanpa-jiwa",
+    "embedPage": "music/seragam-tanpa-jiwa.html"
+  },
+  {
+    "title": "Burnin' smoke, Half a Cup",
+    "genre": "reggae",
+    "tags": [
+      "slow",
+      "easy",
+      "offbeat",
+      "soulful"
+    ],
+    "thumbnail": "img/portfolio/portfolio-17.jpg",
+    "modalId": "burnin-smoke-half-a-cup",
+    "embedPage": "music/burnin-smoke-half-a-cup.html"
+  },
+  {
+    "title": "Until the Sun Go Down",
+    "genre": "reggae",
+    "tags": [
+      "slow",
+      "easy",
+      "offbeat",
+      "soulful"
+    ],
+    "thumbnail": "img/portfolio/portfolio-12.jpg",
+    "modalId": "until-the-sun-go-down",
+    "embedPage": "music/until-the-sun-go-down.html"
+  },
+  {
+    "title": "This is Not Enough",
+    "genre": "punk",
+    "tags": [
+      "punkrock"
+    ],
+    "thumbnail": "img/portfolio/portfolio-10.jpg",
+    "modalId": "this-is-not-enough",
+    "embedPage": "music/this-is-not-enough.html"
+  },
+  {
+    "title": "Weekend Sunshine",
+    "genre": "reggae",
+    "tags": [
+      "laid-back",
+      "island-percussion"
+    ],
+    "thumbnail": "img/portfolio/portfolio-13.jpg",
+    "modalId": "weekend sunshine",
+    "embedPage": "music/weekend-sunshine.html"
+  },
+  {
+    "title": "Whispers of a Windy Afternoon",
+    "genre": "reggae",
+    "tags": [
+      "groovy",
+      "laid-back"
+    ],
+    "thumbnail": "img/portfolio/portfolio-14.jpg",
+    "modalId": "whispers-of-a-windy-afternoon",
+    "embedPage": "music/whispers-of-a-windy-afternoon.html"
+  },
+  {
+    "title": "Wound In Data",
+    "genre": "punk",
+    "tags": [
+      "punkrock"
+    ],
+    "thumbnail": "img/portfolio/portfolio-15.jpg",
+    "modalId": "wound-in-data",
+    "embedPage": "music/wound-in-data.html"
+  },
+  {
+    "title": "집으로 Back to the Calm",
+    "genre": "k-pop",
+    "tags": [
+      "catchy",
+      "harmonized-vocals",
+      "pop-edm"
+    ],
+    "thumbnail": "img/portfolio/portfolio-16.jpg",
+    "modalId": "back-to-the-calm",
+    "embedPage": "music/back-to-the-calm.html"
+  },
+  {
+    "title": "Asumsi yang Tumbang",
+    "genre": "punk",
+    "tags": [
+      "punkrock"
+    ],
+    "thumbnail": "img/portfolio/portfolio-11.jpg",
+    "modalId": "asumsi-yang-tumbang",
+    "embedPage": "music/asumsi-yang-tumbang.html"
+  },
+  {
+    "title": "Collapse and Repeat",
+    "genre": "punk",
+    "tags": [
+      "hardcorepunk",
+      "melodicpunkrock"
+    ],
+    "thumbnail": "img/portfolio/portfolio-18.jpg",
+    "modalId": "collapse-and-repeat",
+    "embedPage": "music/collapse-and-repeat.html"
+  },
+  {
+    "title": "Craving // Chaos",
+    "genre": "punk",
+    "tags": [
+      "ska",
+      "alternative",
+      "punkrock"
+    ],
+    "thumbnail": "img/portfolio/portfolio-19.jpg",
+    "modalId": "craving-chaos",
+    "embedPage": "music/craving-chaos.html"
+  },
+  {
+    "title": "The Current I Resist",
+    "genre": "punk",
+    "tags": [
+      "hardcorepunk",
+      "melodicpunkrock"
+    ],
+    "thumbnail": "img/portfolio/portfolio-20.jpg",
+    "modalId": "the-current-i-resist",
+    "embedPage": "music/the-current-i-resist.html"
+  },
+  {
+    "title": "Fragments of Breath in Silence",
+    "genre": "metal",
+    "tags": [
+      "deathmetal"
+    ],
+    "thumbnail": "img/portfolio/portfolio-21.jpg",
+    "modalId": "fragments-of-breath-in-silence",
+    "embedPage": "music/fragments-of-breath-in-silence.html"
+  },
+  {
+    "title": "In the Shadow of Chimaera",
+    "genre": "metal",
+    "tags": [
+      "metalcore"
+    ],
+    "thumbnail": "img/portfolio/portfolio-22.jpg",
+    "modalId": "in-the-shadow-of-chimaera",
+    "embedPage": "music/in-the-shadow-of-chimaera.html"
+  },
+  {
+    "title": "Lazy Vibes",
+    "genre": "reggae",
+    "tags": [
+      "groovy",
+      "laid-back"
+    ],
+    "thumbnail": "img/portfolio/portfolio-23.jpg",
+    "modalId": "lazy-vibes",
+    "embedPage": "music/lazy-vibes.html"
+  }
+]
